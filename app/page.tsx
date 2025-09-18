@@ -186,40 +186,18 @@ export default function Home() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
         </div>
 
-        {/* Floating Bible Verses - Left Side */}
+        {/* Floating Bible Verse - Left Side */}
         <div className="hidden lg:block">
-          <div className="floating-verse top-20" style={{ animationDelay: '0s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl border border-blue-100">
-              <p className="text-primary font-serif text-lg italic">"Trust in the Lord with all your heart"</p>
-              <p className="text-muted-foreground text-sm mt-2">- Proverbs 3:5</p>
-            </div>
-          </div>
-
-          <div className="floating-verse top-48" style={{ animationDelay: '5s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl border border-amber-100">
-              <p className="text-primary font-serif text-lg italic">"Be still and know that I am God"</p>
-              <p className="text-muted-foreground text-sm mt-2">- Psalm 46:10</p>
-            </div>
-          </div>
-
-          <div className="floating-verse top-80" style={{ animationDelay: '10s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl border border-purple-100">
-              <p className="text-primary font-serif text-lg italic">"I can do all things through Christ"</p>
-              <p className="text-muted-foreground text-sm mt-2">- Philippians 4:13</p>
-            </div>
-          </div>
-
-          <div className="floating-verse" style={{ top: '28rem', animationDelay: '15s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl border border-green-100">
-              <p className="text-primary font-serif text-lg italic">"The Lord is my shepherd"</p>
-              <p className="text-muted-foreground text-sm mt-2">- Psalm 23:1</p>
-            </div>
-          </div>
-
-          <div className="floating-verse" style={{ top: '36rem', animationDelay: '20s' }}>
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-xl border border-blue-100">
-              <p className="text-primary font-serif text-lg italic">"Love one another as I have loved you"</p>
-              <p className="text-muted-foreground text-sm mt-2">- John 13:34</p>
+          <div className="floating-verse top-32" style={{ animationDelay: '1s', maxWidth: '350px' }}>
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-blue-100/50">
+              <p className="text-primary font-serif text-lg italic leading-relaxed">
+                "Love is patient, love is kind. It does not envy, it does not boast, it is not proud.
+                It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs.
+                Love does not delight in evil but rejoices with the truth.
+                It always protects, always trusts, always hopes, always perseveres.
+                Love never fails."
+              </p>
+              <p className="text-muted-foreground text-sm mt-4 font-semibold">- 1 Corinthians 13:4-8</p>
             </div>
           </div>
         </div>
