@@ -153,7 +153,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           {/* Title and Description */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg animate-slide-in-left">
               Join Our Weekly Bible Study
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
