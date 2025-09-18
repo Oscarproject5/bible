@@ -190,3 +190,29 @@ html {
   animation: fadeInUp 1.5s ease-out 0.5s forwards;
   opacity: 0;
 }
+
+@keyframes floatVerse {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+}
+
+.floating-verse {
+  animation: floatVerse 15s ease-in-out infinite;
+  position: absolute;
+  left: 2%;
+  opacity: 0;
+  max-width: 300px;
+  pointer-events: none;
+}
