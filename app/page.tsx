@@ -188,7 +188,7 @@ export default function Home() {
 
         {/* Floating Bible Verse - Left Side */}
         <div className="hidden xl:block">
-          <div className="floating-verse top-32" style={{ animationDelay: '1s', maxWidth: '350px' }}>
+          <div className="floating-verse top-48" style={{ animationDelay: '1s', maxWidth: '350px' }}>
             <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 shadow-2xl border border-blue-100/50">
               <p className="text-primary font-serif text-lg italic leading-relaxed">
                 "Love is patient, love is kind. It does not envy, it does not boast, it is not proud.
