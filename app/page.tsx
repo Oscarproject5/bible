@@ -178,15 +178,34 @@ export default function Home() {
       </section>
 
       {/* Form Section */}
-      <section className="pb-16 lg:pb-24 bg-gradient-to-b from-background to-muted">
-        <div className="container mx-auto px-4 max-w-xl pt-16">
-          <Card className="shadow-2xl border-0">
-            <CardHeader className="text-center pb-8">
+      <section className="relative pb-16 lg:pb-24 bg-gradient-to-br from-slate-50 via-blue-50 to-amber-50 overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
+        </div>
+        <div className="container mx-auto px-4 max-w-xl pt-16 relative z-10">
+          {/* Inspiring Message */}
+          <div className="text-center mb-8 animate-fade-in-up">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-3">
+              "For where two or three are gathered in my name, there am I among them."
+            </h2>
+            <p className="text-muted-foreground text-lg">- Matthew 18:20</p>
+          </div>
+
+          <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
+            <CardHeader className="text-center pb-8 bg-gradient-to-b from-blue-50 to-transparent">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/20 rounded-full mb-4">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
               <CardTitle className="text-3xl font-bold text-primary">
                 Register for Bible Study
               </CardTitle>
-              <CardDescription className="text-base mt-2">
-                Fill out the form below to join our weekly sessions
+              <CardDescription className="text-base mt-2 max-w-md mx-auto">
+                Join our community of believers as we explore God's word together in a warm, welcoming environment
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -263,29 +282,58 @@ export default function Home() {
                     )}
                   </div>
 
-                  <Button
-                    type="submit"
-                    className="w-full bg-secondary hover:bg-secondary/90 text-primary font-semibold text-lg py-6"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? "Submitting..." : "Submit Registration"}
-                  </Button>
+                  <div className="pt-4 border-t border-gray-100">
+                    <p className="text-sm text-muted-foreground mb-4 text-center">
+                      By registering, you'll receive weekly reminders and study materials
+                    </p>
+                    <Button
+                      type="submit"
+                      className="w-full bg-secondary hover:bg-secondary/90 text-primary font-semibold text-lg py-6 transition-all hover:shadow-lg"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <span className="flex items-center justify-center">
+                          <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Submitting...
+                        </span>
+                      ) : (
+                        "Submit Registration"
+                      )}
+                    </Button>
+                  </div>
                 </form>
               )}
             </CardContent>
           </Card>
 
-          {/* Additional Info */}
-          <div className="mt-8 text-center">
-            <p className="text-muted-foreground">
-              Bible Study meets every Wednesday at 7:00 PM
-            </p>
-            <p className="text-muted-foreground mt-2">
-              Questions? Email us at{" "}
-              <a href="mailto:info@biblestudy.com" className="text-primary underline">
+          {/* Additional Info with Icons */}
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="p-4 bg-white/80 backdrop-blur-sm rounded-lg shadow-sm">
+              <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p className="font-semibold text-primary">Weekly Meetings</p>
+              <p className="text-sm text-muted-foreground mt-1">Every Wednesday at 7:00 PM</p>
+            </div>
+            <div className="p-4 bg-white/80 backdrop-blur-sm rounded-lg shadow-sm">
+              <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <p className="font-semibold text-primary">All Welcome</p>
+              <p className="text-sm text-muted-foreground mt-1">Open to all ages and backgrounds</p>
+            </div>
+            <div className="p-4 bg-white/80 backdrop-blur-sm rounded-lg shadow-sm">
+              <svg className="w-8 h-8 text-primary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <p className="font-semibold text-primary">Contact Us</p>
+              <a href="mailto:info@biblestudy.com" className="text-sm text-primary underline hover:text-primary/80">
                 info@biblestudy.com
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </section>
