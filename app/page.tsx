@@ -272,6 +272,18 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground">Practical ways to live out God's word daily</p>
                 </div>
               </div>
+
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mt-1">
+                  <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                  </svg>
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-primary">Food & Refreshments</h4>
+                  <p className="text-sm text-muted-foreground">Homemade treats and beverages to share together</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
