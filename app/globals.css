@@ -160,9 +160,9 @@ html {
   z-index: 20;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   100% {
@@ -171,6 +171,6 @@ html {
   }
 }
 
-.animate-slide-in-left {
-  animation: slideInFromLeft 1.2s ease-out forwards;
+.animate-slide-in-right {
+  animation: slideInFromRight 1.2s ease-out forwards;
 }
