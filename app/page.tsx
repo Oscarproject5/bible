@@ -99,10 +99,10 @@ export default function Home() {
 
         {/* Falling Images Overlay - Only in hero section */}
         <div className="absolute inset-0 z-20 pointer-events-none hidden xl:block overflow-hidden">
-          {/* Left side images - staying within 0-20% of screen */}
+          {/* Left side images - 2 images */}
           <div
             className="snowfall-image h-32 w-40 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '0s', left: '2%' }}
+            style={{ animationDelay: '0s', left: '5%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=400"
@@ -114,7 +114,7 @@ export default function Home() {
 
           <div
             className="snowfall-image h-36 w-44 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '10s', left: '10%' }}
+            style={{ animationDelay: '10s', left: '12%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?q=80&w=400"
@@ -124,33 +124,9 @@ export default function Home() {
             />
           </div>
 
+          {/* Right side images - 2 images */}
           <div
-            className="snowfall-image h-30 w-38 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '20s', left: '5%' }}
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1543702404-38c2035462ad?q=80&w=400"
-              alt="Reading scripture"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div
-            className="snowfall-image h-28 w-36 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '3s', left: '15%' }}
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=400"
-              alt="Hands holding Bible"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          {/* Right side images - staying within 80-100% of screen */}
-          <div
-            className="snowfall-image h-28 w-36 rounded-lg overflow-hidden shadow-2xl opacity-80"
+            className="snowfall-image h-32 w-40 rounded-lg overflow-hidden shadow-2xl opacity-80"
             style={{ animationDelay: '5s', right: '5%' }}
           >
             <Image
@@ -162,32 +138,8 @@ export default function Home() {
           </div>
 
           <div
-            className="snowfall-image h-24 w-32 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '15s', right: '10%' }}
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400"
-              alt="People in fellowship"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div
-            className="snowfall-image h-26 w-34 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '25s', right: '2%' }}
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=400"
-              alt="Church community"
-              fill
-              className="object-cover"
-            />
-          </div>
-
-          <div
-            className="snowfall-image h-32 w-40 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '8s', right: '15%' }}
+            className="snowfall-image h-36 w-44 rounded-lg overflow-hidden shadow-2xl opacity-80"
+            style={{ animationDelay: '15s', right: '12%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=400"
