@@ -102,7 +102,7 @@ export default function Home() {
           {/* Left side images - 2 images */}
           <div
             className="snowfall-image h-32 w-40 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '0s', left: '5%' }}
+            style={{ animationDelay: '1.5s', left: '5%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=400"
@@ -114,7 +114,7 @@ export default function Home() {
 
           <div
             className="snowfall-image h-36 w-44 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '10s', left: '12%' }}
+            style={{ animationDelay: '11.5s', left: '12%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1516559828984-fb3b99548b21?q=80&w=400"
@@ -127,7 +127,7 @@ export default function Home() {
           {/* Right side images - 2 images */}
           <div
             className="snowfall-image h-32 w-40 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '5s', right: '5%' }}
+            style={{ animationDelay: '6.5s', right: '5%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1609234656388-0ff363383899?q=80&w=400"
@@ -139,7 +139,7 @@ export default function Home() {
 
           <div
             className="snowfall-image h-36 w-44 rounded-lg overflow-hidden shadow-2xl opacity-80"
-            style={{ animationDelay: '15s', right: '12%' }}
+            style={{ animationDelay: '16.5s', right: '12%' }}
           >
             <Image
               src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=400"
