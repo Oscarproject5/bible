@@ -174,3 +174,19 @@ html {
 .animate-slide-in-right {
   animation: slideInFromRight 1.2s ease-out forwards;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1.5s ease-out 0.5s forwards;
+  opacity: 0;
+}

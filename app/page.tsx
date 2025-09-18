@@ -156,7 +156,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg animate-slide-in-right">
               Join Our Weekly Bible Study
             </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md animate-fade-in-up">
               Discover the transformative power of God's Word as we gather together every week
               to study, pray, and grow in faith. All are welcome to join our loving community.
             </p>
