@@ -216,3 +216,17 @@ html {
   max-width: 300px;
   pointer-events: none;
 }
+
+/* Simple Curtain Animation */
+@keyframes slideOpen {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.curtain-slide {
+  animation: slideOpen 1s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}

@@ -1,0 +1,51 @@
+// Example implementation using Vercel KV for production
+// 1. Install: npm install @vercel/kv
+// 2. Set up KV database in Vercel Dashboard
+// 3. Replace route.ts with this code
+
+import { NextResponse } from 'next/server';
+import { kv } from '@vercel/kv';
+
+const KV_KEY = 'bible-study-site-data';
+
+export async function GET() {
+  try {
+    // Get data from Vercel KV
+    const data = await kv.get(KV_KEY);
+
+    if (!data) {
+      // Return default data if nothing stored
+      return NextResponse.json({
+        videoUrl: '',
+        videoTitle: 'Welcome Video',
+        videoDescription: 'Watch the welcome message from Pastor Juan',
+        // ... other default data
+      });
+    }
+
+    return NextResponse.json(data);
+  } catch (error) {
+    console.error('Failed to read from KV:', error);
+    return NextResponse.json(
+      { error: 'Failed to read data' },
+      { status: 500 }
+    );
+  }
+}
+
+export async function POST(request: Request) {
+  try {
+    const data = await request.json();
+
+    // Save to Vercel KV
+    await kv.set(KV_KEY, data);
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error('Failed to save to KV:', error);
+    return NextResponse.json(
+      { error: 'Failed to save data' },
+      { status: 500 }
+    );
+  }
+}
